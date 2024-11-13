@@ -1,0 +1,179 @@
+/* src/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7d9a7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    padding-top: 10px;
+    width: 320px; 
+}
+
+.display {
+    font-size: xx-large;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 79px); 
+    gap: 1px;
+}
+
+button {
+    font-size: xx-large;
+    height: 60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.number {
+    background-color: #007bff;
+}
+
+button.number:hover {
+    background-color: #0056b3;
+}
+
+button.number:active {
+    background-color: #004494;
+}
+
+button.operation {
+    background-color: #28a745; 
+}
+
+button.operation:hover {
+    background-color: #218838;
+}
+
+button.operation:active {
+    background-color: #1e7e34;
+}
+
+button.clear {
+    background-color: #dc3545; 
+}
+
+button.clear:hover {
+    background-color: #c82333;
+}
+
+button.clear:active {
+    background-color: #bd2130;
+}
+
+button.zero {
+    background-color: #007bff;
+    grid-column: span 2; 
+}
+
+button.zero:hover {
+    background-color: #0056b3;
+}
+
+button.zero:active {
+    background-color: #004494;
+}
+
+button.equal {
+    grid-column: span 2;
+}
+
+button.theme-toggle{
+    margin-top: 2px;
+    width: 100%;
+    background-color: #007bff;
+    font-size: x-large;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+body.dark-theme {
+    color: #ffffff; 
+}
+
+body.dark-theme .calculator {
+    background-color: #1e1e1e; 
+}
+
+
+body.dark-theme button {
+    color: #ffffff; 
+}
+
+body.dark-theme button.number {
+    background-color: #022852;
+}
+
+body.dark-theme button.number:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme button.number:active {
+    background-color: #004494;
+}
+
+body.dark-theme button.operation {
+    background-color: #37473b; /* Цвет для операций в темной теме */
+}
+
+body.dark-theme button.operation:hover {
+    background-color: #218838;
+}
+
+body.dark-theme button.operation:active {
+    background-color: #1e7e34;
+}
+
+body.dark-theme button.clear {
+    background-color: #9c1a27; 
+}
+
+body.dark-theme button.clear:hover {
+    background-color: #c82333;
+}
+
+body.dark-theme button.clear:active {
+    background-color: #bd2130;
+}
+
+body.dark-theme button.zero {
+    background-color:  #022852;
+    grid-column: span 2; 
+}
+
+body.dark-theme button.zero:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme button.zero:active {
+    background-color: #004494;
+}
+
+body.dark-theme button.equal {
+    grid-column: span 2; 
+}
+
+body.dark-theme button.theme-toggle {
+    background-color:  #022852;
+}
